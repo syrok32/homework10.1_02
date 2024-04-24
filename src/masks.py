@@ -7,4 +7,3 @@ def mask_card(card_number: str) -> str:
 def mask_check(account_number: str) -> str:
     """Возвращает мвску счета"""
     return f"**{account_number[-4:]}"
-

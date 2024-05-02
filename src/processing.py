@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 def sorting_dict_status(user_dictionary: list, status: str = "EXECUTED") -> list:
-    """Сортирует список по status"""
+    """Сортирует список по значению status"""
     list_correct = []
     for i in user_dictionary:
         for k in i.keys():
@@ -17,7 +17,7 @@ def sorting_dict_status(user_dictionary: list, status: str = "EXECUTED") -> list
 
 def sorting_dict_reverse(user_time: list, flag: bool = False) -> list:
     """сортирует по убыванию, возрастанию"""
-    sorted(
+    user_time = sorted(
         user_time,
         key=lambda x: datetime.strptime(x["date"], "%Y-%m-%dT%H:%M:%S.%f"),
         reverse=flag,

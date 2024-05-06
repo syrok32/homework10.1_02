@@ -14,19 +14,20 @@ def mask_card_and_check(number: str) -> str:
             list_number.append(i)
         else:
             list_data.append(i)
-    word = "".join(list_data).strip()
+            list_data.append(" ")
+    word = "".join(list_data)
 
     if bool(re.search("[а-яА-Я]", list_data[0])):
 
         check_mask_account = mask_check("".join(list_number))
 
-        return f"{word} {check_mask_account}"
+        return f"{word}{check_mask_account}"
 
     else:
         card_mask_account = mask_card("".join(list_number))
         name_data = "".join(list_data)
 
-        return f"{name_data} {card_mask_account}"
+        return f"{name_data}{card_mask_account}"
 
 
 def time_correct(mask_time: str) -> str:

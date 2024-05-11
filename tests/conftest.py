@@ -2,17 +2,17 @@ import pytest
 
 
 @pytest.fixture
-def card():
+def card() -> str:
     return "7000792289606361"
 
 
 @pytest.fixture
-def check():
+def check() -> str:
     return "73654108430135874305"
 
 
 @pytest.fixture
-def list_sorting():
+def list_sorting() -> list:
     return [
         {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
         {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},
@@ -22,7 +22,7 @@ def list_sorting():
 
 
 @pytest.fixture
-def list_time_date():
+def list_time_date() -> list:
     return [
         {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
         {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},

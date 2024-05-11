@@ -12,9 +12,9 @@ from src.widget import mask_card_and_check, time_correct
         ("Счет 73654108430135874305", "Счет **4305"),
     ],
 )
-def test_mask_card_and_check(initial, expected_result):
+def test_mask_card_and_check(initial: str, expected_result: str) -> None:
     assert mask_card_and_check(initial) == expected_result
 
 
-def test_time_correct():
+def test_time_correct() -> None:
     assert time_correct("2018-07-11T02:26:18.671407") == "11.07.2018"

@@ -8,6 +8,7 @@ packages = [{include = "homework_9"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pytest-cov = "^5.0.0"
 
 
 [tool.poetry.group.dev.dependencies]

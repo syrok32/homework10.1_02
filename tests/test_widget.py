@@ -1,4 +1,5 @@
 import pytest
+
 from src.widget import mask_card_and_check, time_correct
 
 

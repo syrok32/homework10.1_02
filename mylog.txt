@@ -1,1 +1,1 @@
-my_function ок
+test_my_function_ok error: <class 'TypeError'>.Inputs: (1, 'D'), {}

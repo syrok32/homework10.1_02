@@ -4,6 +4,7 @@ from typing import Any, Callable
 
 def log(filename: Any | None = None) -> Any:
     """Возвращает логирвание в файл или консоль"""
+
     def decorator(func: Callable[[Any], str | None]) -> Any:
         @wraps(func)
         def wrapper(*args: Any, **kwargs: Any) -> Any:
